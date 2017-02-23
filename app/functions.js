@@ -33,12 +33,21 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBall();
   drawPaddle();
-  
+
   if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
     dx = -dx;
   }
-  else if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
+  if(y + dy < ballRadius) {
     dy = -dy;
+  }
+  else if(y + dy > canvas.height-ballRadius) {
+    if(x > paddleX && x < paddleX + paddleWidth) {
+      dy = -dy;
+    }
+    else {
+      alert("GAME OVER");
+      document.location.reload();
+    }
   }
 
   if(rightPressed && paddleX < canvas.width-paddleWidth) {

@@ -1,0 +1,22 @@
+{
+  "name": "jscanvas",
+  "version": "1.0.0",
+  "description": "A project practicing canvas drawing and animation using vanilla JavaScript",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git:https://github.com/lapeters/jscanvas.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Lindsay Peters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lapeters/jscanvas/issues"
+  },
+  "homepage": "https://github.com/lapeters/jscanvas#readme"
+}

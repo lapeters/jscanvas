@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/lapeters/jscanvas/issues"
   },
-  "homepage": "https://github.com/lapeters/jscanvas#readme"
+  "homepage": "https://github.com/lapeters/jscanvas#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1"
+  }
 }
